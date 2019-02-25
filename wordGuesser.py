@@ -4,10 +4,9 @@ import csv
 
 product_list = []
 file_name = input("File name: ")
-with open(file_name, 'r') as f:
+with open(file_name, 'r', encoding="utf8") as f:
   reader = csv.reader(f)
   product_list = list(reader)
-
 
 clean_list = []
 for product in product_list:
